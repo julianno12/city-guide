@@ -1,0 +1,14 @@
+.git/
+**/bin
+**/obj
+.vscode/
+.gitignore
+.gitattributes
+infrastructure/
+node_modules/
+
+ios/
+android/.idea/
+android/app/build/
+android/local.properties
+**/*.iml
