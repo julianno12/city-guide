@@ -1,9 +1,9 @@
 import React from "react";
 import renderer from "react-test-renderer";
 
-import Welcome from "../../../src/Pages/Onboarding/Welcome";
+import { SplashScreen } from "../../../src/Pages/SplashScreen";
 
 test("renders correctly", () => {
-  const tree = renderer.create(<Welcome />).toJSON();
+  const tree = renderer.create(<SplashScreen />).toJSON();
   expect(tree).toMatchSnapshot();
 });

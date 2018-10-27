@@ -1,14 +1,16 @@
+if: branch = dev
 language: bash
 services:
   - docker
 
 before_script:
-  - ./docker/buildsteps/login.sh
-  - source ./docker/buildsteps/common.sh
+  - cd ./docker/buildsteps
+  - ./login.sh
+  - source ./common.sh
 
 script:
-  - ./docker/buildsteps/build.sh
-  - ./docker/buildsteps/deploy.sh
+  - ./build.sh
+  - ./deploy.sh
 
 after_script:
-  - ./docker/buildsteps/clean.sh
+  - ./clean.sh

@@ -4,12 +4,12 @@ import { View, ActivityIndicator } from "react-native";
 import styles from "./styles";
 
 export interface SplashScreenProps {
-    initApp: () => void;
+    // initApp: () => void;
 }
 
 export class SplashScreen extends React.Component<SplashScreenProps> {
     componentDidMount() {
-        this.props.initApp();
+        // this.props.initApp();
     }
 
     render() {
