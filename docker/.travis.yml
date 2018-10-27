@@ -1,0 +1,14 @@
+language: bash
+services:
+  - docker
+
+before_script:
+  - ./buildsteps/login.sh
+  - source ./buildsteps/common.sh
+
+script:
+  - ./buildsteps/build.sh
+  - ./buildsteps/deploy.sh
+
+after_script:
+  - ./buildsteps/clean.sh
