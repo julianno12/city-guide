@@ -13,6 +13,7 @@ public class CityGuidePackage implements ReactPackage {
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> natives = new ArrayList<>();
+        natives.add(new BugfenderModule(reactContext));
         natives.add(new ConfigModule(reactContext));
         return natives;
     }

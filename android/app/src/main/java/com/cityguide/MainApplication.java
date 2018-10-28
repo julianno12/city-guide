@@ -2,6 +2,7 @@ package com.cityguide;
 
 import android.app.Application;
 
+import com.bugfender.sdk.Bugfender;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -42,5 +43,10 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
+
+    String bugfenderAppId = getResources().getString(R.string.bugfender_app_id);
+    Bugfender.init(this, bugfenderAppId, BuildConfig.DEBUG);
+    Bugfender.enableUIEventLogging(this);
+    Bugfender.enableCrashReporting();
   }
 }

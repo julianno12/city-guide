@@ -1,0 +1,16 @@
+PODS:
+  - BugfenderSDK/ObjC (1.5.6)
+
+DEPENDENCIES:
+  - BugfenderSDK/ObjC (~> 1.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BugfenderSDK
+
+SPEC CHECKSUMS:
+  BugfenderSDK: 68bdd27276ae0d85d4a7fad042fab6e19b206562
+
+PODFILE CHECKSUM: 79d65af7f446538d1daf33efdab020343a85b78f
+
+COCOAPODS: 1.5.3

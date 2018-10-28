@@ -55,6 +55,8 @@
 	<string>(Debug)</string>
 	<key>app_base_address</key>
 	<string>UNKNOWN</string>
+	<key>bugfender_app_id</key>
+	<string>bVsDxyDuXMqNVN6l85EDq53oNzN8Vo0m</string>
 	<key>is_debug</key>
 	<true/>
 </dict>

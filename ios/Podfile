@@ -1,0 +1,7 @@
+platform :ios, '10.0'
+
+target 'CityGuide' do
+  pod 'BugfenderSDK/ObjC', '~> 1.5'
+end
+
+

@@ -2,7 +2,7 @@
 
 curl \
   -F "status=2" \
-  -F "notify=0" \
+  -F "notify=1" \
   -F "notes=Automatic CI build" \
   -F "commit_sha=$TRAVIS_COMMIT" \
   -F "dsym=@envTest-staging.apk" \

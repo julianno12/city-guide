@@ -9,11 +9,16 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <BugfenderSDK.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [Bugfender activateLogger:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"bugfender_app_id"]];
+  [Bugfender enableUIEventLogging];
+  [Bugfender enableCrashReporting];
+  
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];

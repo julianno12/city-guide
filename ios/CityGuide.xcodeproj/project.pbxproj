@@ -23,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		27C75E9C94C5EC1BAE33AC6C /* libPods-CityGuide.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AD5E32DBD3530B1CFFA06C /* libPods-CityGuide.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -39,6 +40,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		F50C35D82184D58C00B4B28E /* ConfigModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F50C35D72184D58C00B4B28E /* ConfigModule.m */; };
+		F5904D7C2185F0F8003F2AD4 /* BugfenderModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F5904D7B2185F0F8003F2AD4 /* BugfenderModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -340,12 +342,17 @@
 		2D02E47B1E0B4A5D006451C7 /* CityGuide-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CityGuide-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* CityGuide-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CityGuide-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		480B59BAF58A2DEC9025DDCD /* Pods-CityGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityGuide.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CityGuide/Pods-CityGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		67AD5E32DBD3530B1CFFA06C /* libPods-CityGuide.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CityGuide.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		E8F80A80107F3D74B59119A3 /* Pods-CityGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CityGuide.release.xcconfig"; path = "Pods/Target Support Files/Pods-CityGuide/Pods-CityGuide.release.xcconfig"; sourceTree = "<group>"; };
 		F50C35D62184D58C00B4B28E /* ConfigModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConfigModule.h; path = CityGuide/ConfigModule.h; sourceTree = "<group>"; };
 		F50C35D72184D58C00B4B28E /* ConfigModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConfigModule.m; path = CityGuide/ConfigModule.m; sourceTree = "<group>"; };
+		F5904D7A2185F0F8003F2AD4 /* BugfenderModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BugfenderModule.h; path = CityGuide/BugfenderModule.h; sourceTree = "<group>"; };
+		F5904D7B2185F0F8003F2AD4 /* BugfenderModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BugfenderModule.m; path = CityGuide/BugfenderModule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,6 +380,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				27C75E9C94C5EC1BAE33AC6C /* libPods-CityGuide.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +501,8 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				F50C35D62184D58C00B4B28E /* ConfigModule.h */,
 				F50C35D72184D58C00B4B28E /* ConfigModule.m */,
+				F5904D7A2185F0F8003F2AD4 /* BugfenderModule.h */,
+				F5904D7B2185F0F8003F2AD4 /* BugfenderModule.m */,
 			);
 			name = CityGuide;
 			sourceTree = "<group>";
@@ -524,6 +534,7 @@
 			isa = PBXGroup;
 			children = (
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				67AD5E32DBD3530B1CFFA06C /* libPods-CityGuide.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -582,6 +593,7 @@
 				00E356EF1AD99517003FC87E /* CityGuideTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				BCA4E37186E51FEEE1C8ED0C /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -606,6 +618,15 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BCA4E37186E51FEEE1C8ED0C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				480B59BAF58A2DEC9025DDCD /* Pods-CityGuide.debug.xcconfig */,
+				E8F80A80107F3D74B59119A3 /* Pods-CityGuide.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -633,6 +654,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "CityGuide" */;
 			buildPhases = (
+				11DD589BB510DE3117378C91 /* [CP] Check Pods Manifest.lock */,
 				F50C35D52184D50000B4B28E /* ShellScript */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -1093,6 +1115,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		11DD589BB510DE3117378C91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CityGuide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1139,6 +1183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5904D7C2185F0F8003F2AD4 /* BugfenderModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				F50C35D82184D58C00B4B28E /* ConfigModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
@@ -1231,6 +1276,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 480B59BAF58A2DEC9025DDCD /* Pods-CityGuide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1255,6 +1301,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8F80A80107F3D74B59119A3 /* Pods-CityGuide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
