@@ -1,16 +1,29 @@
-if: branch = dev
-language: bash
-services:
-  - docker
+# if: branch = dev
+matrix:
+  include:
+    - language: bash
+      services:
+        - docker
+      before_script:
+        - cd ./mobile/docker/buildsteps
+        - ./login.sh
+        - source ./common.sh
+      script:
+        - ./build.sh
+        - ./deploy.sh
+      after_script:
+        - ./clean.sh
 
-before_script:
-  - cd ./docker/buildsteps
-  - ./login.sh
-  - source ./common.sh
-
-script:
-  - ./build.sh
-  - ./deploy.sh
-
-after_script:
-  - ./clean.sh
+    - language: csharp
+      solution: backend/CityGuide.sln
+      dotnet: 2.1.403
+      before_script:
+      - cd ./backend
+      - ./login.sh
+      script:
+      - dotnet build
+      deploy:
+        provider: azure_web_apps
+        verbose: true
+        skip_cleanup: true
+        on: dev

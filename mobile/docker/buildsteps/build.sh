@@ -2,7 +2,7 @@
 
 set -ex
 
-cd $TRAVIS_BUILD_DIR/docker
+cd $TRAVIS_BUILD_DIR/mobile/docker
 
 docker build \
     -t $BUILD_IMAGE \
