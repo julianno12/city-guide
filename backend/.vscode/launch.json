@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Attach to Core",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickRemoteProcess}",
+      "sourceFileMap": {
+        "/app/code": "${workspaceRoot}"
+      },
+      "pipeTransport": {
+        "pipeCwd": "${workspaceFolder}",
+        "pipeProgram": "docker",
+        "quoteArgs": false,
+        "pipeArgs": [
+          "exec -i cityguide_api_1"
+        ],
+        "debuggerPath": "/vsdbg/vsdbg"
+      }
+    }
+  ]
+}
